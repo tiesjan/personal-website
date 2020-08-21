@@ -1,0 +1,98 @@
+html {
+    font-size: 1.125rem;
+    min-width: 360px;
+}
+
+body {
+    background-color: #F3F5F3;
+    box-sizing: border-box;
+    color: #181818;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container > .column {
+    margin: 0.5rem;
+}
+
+.container > .column-left {
+    order: 1;
+}
+
+.container > .column-right {
+    height: 15.5rem;
+    order: 1;
+    overflow: hidden;
+}
+
+.container > .column-right > .profile-picture {
+    margin-top: -9%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+a:active {
+    color: #EE0000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.icon-link {
+    white-space: nowrap;
+}
+
+.icon {
+    padding: 0 0.2rem 0 0.1rem;
+    vertical-align: -9%;
+    width: 1rem;
+}
+
+@media (min-width: 528px) {
+    .container > .column-right {
+        height: 23rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        max-width: 1140px;
+    }
+
+    .container > .column-right {
+        flex-shrink: 0;
+        height: auto;
+        order: 2;
+        width: 17.5rem;
+    }
+
+    .container > .column-right > .profile-picture {
+        border-radius: 0.2rem;
+        margin-top: auto;
+    }
+}
