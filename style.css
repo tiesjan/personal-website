@@ -34,6 +34,7 @@ body {
 }
 
 .container > .column-right > .profile-picture {
+    height: auto;
     margin-top: -10%;
     width: 100%;
 }
