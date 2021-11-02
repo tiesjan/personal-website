@@ -71,12 +71,9 @@ a.social-icon-link {
     white-space: nowrap;
 }
 
-img.social-icon-image {
-    border: 0;
-    height: 1rem;
+i.social-icon-image {
+    color: #181818;
     padding: 0 0.2rem 0 0.1rem;
-    vertical-align: text-bottom;
-    width: 1rem;
 }
 
 @media (min-width: 528px) {
